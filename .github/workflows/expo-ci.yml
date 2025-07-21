@@ -21,7 +21,18 @@ jobs:
         run: npm install
 
       - name: Run Expo prebuild
-        run: npx expo prebuild
+        run: npx expo prebuild --yes
 
       - name: Export app
         run: npx expo export
+cd ~/Downloads/test-expo-ci
+touch .trigger-again
+git add .trigger-again
+git commit -m "Trigger GitHub Actions again"
+git push
+
+ls -l .github/workflows
+
+-rw-r--r--  1 stephenreganato  staff  456 Jul 21 16:53 expo-ci.yml
+
+
