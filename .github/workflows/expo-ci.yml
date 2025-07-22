@@ -21,7 +21,10 @@ jobs:
         run: npm install
 
       - name: Run Expo prebuild
-        run: CI=1 npx expo prebuild --yes
+        run: |
+          export CI=1
+          npx expo prebuild
+
 
       - name: Export app
         run: npx expo export
