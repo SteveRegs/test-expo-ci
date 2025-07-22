@@ -2,6 +2,7 @@
   "name": "test-expo-ci",
   "version": "1.0.0",
   "dependencies": {
-    "expo": "^53.0.20"
+    "expo": "^53.0.20",
+    "expo-status-bar": "^2.2.3"
   }
 }
